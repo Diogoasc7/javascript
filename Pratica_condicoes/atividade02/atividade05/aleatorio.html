@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleatorio</title>
+</head>
+
+<body>
+    <script>
+        const numeroAleatorio = Math.floor(Math.random() * 100) + 1
+        let tentativas = 0
+        let escolha
+
+        while (escolha !== numeroAleatorio) {
+            let escolha = Number(prompt('Escolha um número de 0 a 100:'))
+            alert(`Número de tentativas ${tentativas}`)
+            tentativas++
+
+            if (escolha < numeroAleatorio) {
+                alert('Tente um número maior')
+            } else if (escolha > numeroAleatorio) {
+                alert('Tente um número menor')
+            }
+        }
+        
+        alert('Número correto, PARABÉNS')
+    </script>
+</body>
+</html>

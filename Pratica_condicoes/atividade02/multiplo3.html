@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplos</title>
+</head>
+
+<button onclick="contar()">Contar</button>
+
+<script>
+    function contar() {
+        let count = 1;
+
+        while (count <= 100) {
+            if (count % 3 == 0)
+                document.writeln(count + '<br />');
+            count = count + 1;
+        }
+    }
+</script>
+</body>
+</html>

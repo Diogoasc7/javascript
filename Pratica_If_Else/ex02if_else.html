@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positivo e Negativo</title>
+</head>
+<body>
+    <h1>Positivo ou Negativo?</h1>
+    <label for="num">Digite um número: </label>
+    <input type="text" name="num" id="num"  value="">
+    <input type="button" value="confirmar" onclick="confirmar()">
+    <div id="res"></div>
+
+    <script>
+        function confirmar(){
+            let num = document.getElementById('num').value
+            let res = document.getElementById('res')
+            res.innerHTML = `Resultado: `
+            if (num >= 0){
+                res.innerHTML = `<p>O número <strong>${num}</strong> é positivo!</p>`
+            }else {
+                res.innerHTML = `<p>O número <strong>${num}</strong> é negativo!</p>`
+            }
+        }
+
+    </script>
+</body>
+</html>

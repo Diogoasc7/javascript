@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você é Estrangeiro?</title>
+</head>
+<body>
+    <h1>Em qual país você mora?</h1>
+    Eu moro no(a) <input type="text" name="ptxt" id="ptxt">
+    <input type="button" value="Certificar" onclick="calcular()">
+
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+            var ptxt = document.getElementById('ptxt')
+            var res = document.getElementById('res')
+            var brasa = 'Brasil'
+            if(ptxt = brasa) {
+                res.innerHTML += /*concatenação*/ `<p>Você é <strong>Brasileiro</strong></p>`
+            }
+            res.innerHTML += `<p>Você é <strong>Estrangeiro</strong></p>`
+        }
+    </script>
+</body>
+</html>

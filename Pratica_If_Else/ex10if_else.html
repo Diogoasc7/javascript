@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do NOT (!)</title>
+</head>
+
+<body>
+    <h2>Escolha umadas opções abaxio</h2>
+    <p>Opções:</p>
+    <p>
+        0. Sair <br>
+        1. Comprar <br>
+        2. Vender <br>
+        3. Trocar <br>
+        4. Etc
+    </p>
+    <label for="op">Digite sua opção:</label>
+    <input type="number" name="op" id="op" value="">
+    <input type="button" value="confirmar" onclick="confirmar()">
+
+    <script>
+        function confirmar() {
+            let op = Number(document.getElementById('op').value)
+
+            if (!op) {
+                alert('Saindo do sistema')
+            } else {
+                alert(`A opção escolhida foi a ${op}`)
+            }
+        }
+    </script>
+</body>
+
+</html>

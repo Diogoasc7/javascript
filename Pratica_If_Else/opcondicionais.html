@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Condicionais</title>
+</head>
+<body>
+    <h1>Atividade 1</h1> <br>
+    <label for="igual"></label>
+    <input type="text" name="igual" id="igual" value="">
+    <label for="igual2">==</label>
+    <input type="text" name="igual2" id="igual2" value=""> 
+    <button type="button" onclick="enviar()">Comparar</button> <br>
+
+    <label for="diferente"></label>
+    <input type="text" name="diferente" id="diferente" value="">
+    <label for="diferente">!=</label>
+    <input type="text" name="diferente2" id="diferente2" value="">
+    <button type="button" onclick="enviar2()">Comparar</button> <br>
+
+    <label for="maior"></label>
+    <input type="text" name="maior" id="maior" value="">
+    <label for="maior2">></label>
+    <input type="text" name="maior2" id="maior2" value="">
+    <button type="button" onclick="enviar3()">Comparar</button> <br>
+
+    <label for="maiorig"></label>
+    <input type="text" name="maiorig" id="maiorig" value="">
+    <label for="maiorig2">>=</label>
+    <input type="text" name="maiorig2" id="maiorig2" value="">
+    <button type="button" onclick="enviar4()">Comparar</button> <br>
+
+    <label for="menor"></label>
+    <input type="text" name="menor" id="menor" value="">
+    <<label for="menor2"></label>
+    <input type="text" name="menor2" id="menor2" value="">
+    <button type="button" onclick="enviar5()">Comparar</button> <br>
+
+    <label for="menorig"></label>
+    <input type="text" name="menorig" id="menorig" value="">
+    <=<label for="menor2"></label> 
+    <input type="text" name="menorig2" id="menorig2" value="">
+    <button type="button" onclick="enviar6()">Comparar</button> <br>
+
+    <script>
+        function enviar(){
+            let igualdade = document.getElementById('igual').value
+            let igualdade2 = document.getElementById('igual2').value
+            alert(igualdade == igualdade2)
+        }
+        function enviar2(){
+            let diferente = document.getElementById('diferente').value
+            let diferente2 = document.getElementById('diferente2').value
+            alert(diferente != diferente2)
+        }
+        function enviar3(){
+            let maior = document.getElementById('maior').value
+            let maior2 = document.getElementById('maior2').value
+            alert(maior > maior2)
+        }
+        function enviar4(){
+            let maiorig = document.getElementById('maiorig').value
+            let maiorig2 = document.getElementById('maiorig2').value
+            alert(maiorig >= maiorig2)
+        }
+        function enviar5(){
+            let menor = document.getElementById('menor').value
+            let menor2 = document.getElementById('menor2').value
+            alert(menor < menor2)
+        }
+        function enviar6(){
+            let menorig = document.getElementById('menorig').value
+            let menorig2 = document.getElementById('menorig2').value
+            alert(menorig <= menorig2)
+        }
+    </script>
+
+</body>
+</html>

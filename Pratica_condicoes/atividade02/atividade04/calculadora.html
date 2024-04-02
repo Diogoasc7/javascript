@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+        
+        let num1 = Number(prompt('Digite o primeiro número'))
+        let num2 = Number(prompt('Digite o segundo número'))
+        let tipo = prompt('Digite que tipo de conta deseja fazer (+ - / *)')
+        
+        let res = (num1 + num2)
+        let resS = (num1 - num2)
+        let resM = (num1 * num2)
+        let resD = (num1 / num2)
+
+        if (tipo === '+'){
+            num1 + num2
+            alert(`O resultado de ${num1} + ${num2} é ${res}`)
+        } else if (tipo === '-'){
+            num1 - num2
+            alert(`O resultado de ${num1} - ${num2} é ${resS}`)
+        } else if (tipo === '*'){
+            num1 * num2
+            alert(`O resultado de ${num1} * ${num2} é ${resM}`)
+        } else if (tipo === '/'){
+            num1 / num2
+            alert(`O resultado de ${num1} / ${num2} é ${resD}`)
+        } else {
+            alert('[ERRO] REALIZE NOVAMENTE')
+        }
+        
+
+
+    </script>
+</body>
+</html>

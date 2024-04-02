@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações</title>
+</head>
+<body>
+    <h1>Vamos realizar algumas operações!</h1>
+
+    <script>
+        window.alert('A seguir digite os números que deseja operar!')
+
+        let num1 = Number(prompt('Digite o primeiro número: '))
+        let num2 = Number(prompt('Digite o segundo número: '))
+
+        let soma = num1 + num2
+        document.write("Adição        = ", soma, "<br>") //Outra forma de escrever no document.write utilizando ("")
+
+        let subtração = num1 - num2
+        document.write(`O valor da subtração entre ${num1} - ${num2} é igual a: `, subtração, "<br>")
+
+        let multiplicação = num1 * num2
+        document.write(`O valor da multiplicação entre ${num1} * ${num2} é igual a: `, multiplicação, "<br>")
+
+        let divisão = num1 / num2
+        document.write(`O valor da divisão entre ${num1} / ${num2} é igual a: `, divisão, "<br>") 
+
+        /*
+        Podemos também abreviar, ficaria:
+        document.write("Adição        = ", num1+num2, "<br>")
+        document.write("Subtração     = ", num1-num2, "<br>")
+        document.write("Multiplicação = ", num1*num2, "<br>")
+        document.write("Divisão       = ", num1/num2)
+        */
+    </script>
+</body>
+</html>

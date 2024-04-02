@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Você é estrangeiro?</h1>
+    <label for="pais">Em que país você mora?</label>
+    <input type="text" name="pais" id="pais" value="">
+    <input type="button" value="Confirmar" onclick="pesquisar()">
+    <div id="res">
+    </div>
+    
+    <script>
+        function pesquisar(){
+            let pais = document.getElementById('pais').value
+            let res = document.querySelector('div#res')
+            res.innerHTML = 'Resultado: '
+            if (pais == 'Brasil'){
+                res.innerText = `Você mora no ${pais} e é Brasileiro!`
+            } else {
+                res.innerText= `Você mora em ${pais} e é Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <form>
+        <p>Qual é o seu nome? 
+            <input type="text" name="texto" id="txt" value="">
+            <button type="submit" onclick="enviar()">Confirmar</button>
+        </p><br>
+        
+        <p>CEP 
+            <input type="text" name="cep" id="cep" size="5" maxlength="5"> - 
+            <input type="text" name="cep2" id="cep2" size="3" maxlength="3">
+        </p><br>
+
+        <p>Data de nascimento: 
+            <input type="text" name="dia" id="dia" size="2" maxlength="2" value="dd"> -
+            <input type="text" name="mes" id="mes" size="2" maxlength="2" value="mm"> -
+            <input type="text" name="ano" id="ano" size="4" maxlength="4" value="aaaa">
+        </p>
+        
+        <fieldset>
+            <legend>login</legend>
+                <p>email -
+                <label for="lgn"></label>
+                <input type="email" name="lgn" id="lgn">
+            </p>
+            <p>Senha -
+                <label for="senha"></label>
+                <input type="password" name="senha" id="senha" textarea="senha" size="10" maxlength="8">
+            </p>
+        </fieldset>
+
+        <p>Você deseja trabalhar como Webmaster? <br>
+            <input type="radio" name="webmaster" id="webmaster" value="sim">Sim <br>
+            <input type="radio" name="webmaster" id="webmaster" value="não">Não <br>
+            <input type="radio" name="webmaster" id="webmaster" value="talvez">Talvez <br>
+            <input type="radio" name="webmaster" id="webmaster" value="quem_sabe">Quem Sabe <br>
+            <button type="button">Confirmar</button>
+        </p>
+
+        <p>Oque você deseja aprender? <br>
+            <input type="checkbox" name="opcoes" value="html"> HTML <br>
+            <input type="checkbox" name="opcoes" value="css"> CSS <br>
+            <input type="checkbox" name="opcoes" value="javascript"> JavaScript <br>
+            <input type="checkbox" name="opcoes" value="php"> PHP <br>
+            <button type="button">Confirmar</button>
+        </p>
+
+        <p>Que dia do mês deseja receber seu pagamento? <br>
+            <select name="dia_pagamento" id="dia_pagamento">
+                <option value="1">1</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+            </select>
+        </p>
+
+        <p>Você irar torcer para o time de qual grupo? <br>
+            <select name="torcida" id="torcida">
+                <optgroup label="Grupo A">Grupo 
+                    <option value="Cruzeiro">Cruzeiro</option>
+                    <option value="Atletic">Atletic</option>
+                    <option value="Patrocinense">Patrocinense</option>
+                </optgroup>
+                
+                <optgroup label="Grupo B">
+                    <option value="Atletico">Atletico</option>
+                    <option value="América">América</option>
+                    <option value="Ipatinga">Ipatinga</option>
+                </optgroup>
+            </select>
+
+            <select name="torcida" id="torcida" size="8" multiple> 
+                <optgroup label="Grupo A">Grupo 
+                    <option value="Cruzeiro">Cruzeiro</option>
+                    <option value="Atletic">Atletic</option>
+                    <option value="Patrocinense">Patrocinense</option>
+                </optgroup>
+                
+                <optgroup label="Grupo B">
+                    <option value="Atletico">Atletico</option>
+                    <option value="América">América</option>
+                    <option value="Ipatinga">Ipatinga</option>
+                </optgroup>
+            </select>
+
+            <select name="torcida" id="torcida" size="5">
+                <optgroup label="Grupo A">Grupo 
+                    <option value="Cruzeiro">Cruzeiro</option>
+                    <option value="Atletic">Atletic</option>
+                    <option value="Patrocinense">Patrocinense</option>
+                </optgroup>
+                
+                <optgroup label="Grupo B">
+                    <option value="Atletico">Atletico</option>
+                    <option value="América">América</option>
+                    <option value="Ipatinga">Ipatinga</option>
+                </optgroup>
+            </select>
+        </p><br>
+        
+        <textarea name="comentario" rows="10" cols="40" maxlength="500">Comentário</textarea><br>
+        <textarea rows="1" cols="40" readonly>
+            Escreva algo aqui e ganhe mil reais...
+            HAAAA pegadinha do malandro!
+        </textarea>
+    </form>
+
+    <script>
+        function enviar() {
+            let valor = document.getElementById('txt').value
+            alert('Seu nome é: '+ valor)
+        }
+    </script>
+</body>
+</html>

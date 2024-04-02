@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aposentadoria</title>
+</head>
+<body>
+    <label for="idade">Informe sua idade:</label>
+    <input type="number" name="idade" id="idade" value="">
+    <input type="button" value="OK" onclick="aposentar()">
+
+    <script>
+        function aposentar(){
+            let idade = Number(document.getElementById('idade').value)
+
+            if (idade >= 65){
+                alert('Parabéns você já pode se aposentar!')
+            }else {
+                let anos = 65 - idade
+                alert(`Você ainda precisa de mais ${anos} anos de contribuição para se aposentar.`)
+            }
+        }
+    </script>
+</body>
+</html>

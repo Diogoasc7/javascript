@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raio Circulo</title>
+</head>
+<body>
+    <h1>Vamos descobrir o perímetro e área do circulo.</h1>
+
+    <script>
+        let raio = Number(prompt('Escreva o valor do raio do circulo: '))
+        document.write('O raio do circulo equivale há: ', raio, "<br>")
+
+        document.write('Agora vamos calcular o valor de sua área e perímetro.')
+        
+        let área = Number(Math.PI * (raio**2))
+        document.write('O valor da área é = ', área, "<br>")
+
+        let perímetro = Number(2*Math.PI + 2*raio)
+        document.write('O valor do perímetro é = ', perímetro, "<br>")
+        
+    </script>
+</body>
+</html>

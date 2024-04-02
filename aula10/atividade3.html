@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Km por Litro</title>
+</head>
+<body>
+    <h1>Comando de bordo</h1>
+
+    <script>
+        let money = Number(prompt('Me diga quanto de dinheiro possui: '))
+        let quantidade = Number(money/5)
+        let kmt = Number(quantidade*20)
+        
+        document.write(`Você possui $${money} reais <br>`)
+        document.write(`Com essa quantia você consegue comprar ${quantidade} litros de gasolina <br>` )
+        document.write(`E consegue andar ${kmt} km`)
+    </script>
+</body>
+</html>

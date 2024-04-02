@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário JavaScript</title>
+</head>
+<body>
+    <label for="nome"></label>Qual o seu nome?
+    <input type="text" name="nome" id="nome" value="">
+    <button onclick="enviar()">Confirmar</button>
+
+    <script>
+        function enviar(){
+            let valor = document.getElementById('nome').value
+            alert('Seu nome é: '+ valor)
+        }
+    </script>
+</body>
+</html>

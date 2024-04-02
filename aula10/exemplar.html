@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área</title>
+    <style>
+        div{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Atividade</h1>
+    <div>
+        <ul>
+            <li> Calcule e escreva o valor do raio de um circulo.</li>
+        </ul>
+    </div>
+
+    <script>
+        window.alert('Olá, esse é meu primeiro site!')
+        window.confirm('Vamos resolver um problema?')
+        window.prompt('Primeiro preciso saber qual é o seu nome,me diga')
+        /*Acima podemos ver 3 comandos, 
+        alert - tem a função de criar um alerta com opção de darmos apenas o (ok)
+
+        confirm - nos da duas opções de escolha o (ok) e o (cancel)
+
+        prompt - da ao usuário  a opção de digitar na barra uma resposta a oque foi falado pelo criador, como podemos ver todos no exemplo acima
+        */
+       //AGORA VAMOS APRENDER A RETORNAR ESSES DADOS
+
+        let nome = prompt('Qual o seu nome?')
+        document.write('Bem vindo '+ nome +' . ')
+
+        let idade = prompt('Qual a sua idade?')
+        document.write('Você tem ' + idade + ' anos de idade. ')
+        /*Nos comandos acima podemos ver que armazenamos o que o usuário digita nas variáveis nome e idade
+        e em seguida, usamos o método document.write() para exibir o que tem dentro dessas variáveis.
+        Note que usamos o símbolo de + para 'unir' as strings dentro do comando alert. CONCATENAÇÃO*/
+
+        window.alert('Agora vamos realizar a soma de dois números')
+        let num1 = Number(prompt('Digite um número: '))
+        let num2 = Number(prompt('Digite outro número: '))
+        document.write(`O resultado da soma entre ${num1} + ${num2} é `, num1 + num2)
+        /* Quando o usuário digita algo para o método prompt(), este método armazena a informação digitada na forma de STRING.
+        Ou seja, não é 1, é "1" que está armazenado na variável, é um texto.
+        Não é 2, é "2".
+        Então se fizermos: "1" + "2" = "12"
+        Ou seja, agrupamos, concatenamos duas strings, grudamos uma na outra!
+        Para calcularmos corretamente a soma, precisamos usar uma função Para transformar "2" em 2, "1" em 1 e etc, usamos a função NUMBER que recebe uma string e transforma em um número, seja ele integer(inteiro) ou float(decimal)*/
+
+        
+    </script>
+</body>
+</html>

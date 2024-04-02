@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Maiores</title>
+</head>
+<body>
+    Digite sua idade: <input type="text" name="idade" id="idade" value="">
+    <input type="button" value="confirmar" onclick="confirmar()"> <br>
+
+    <script>
+        function confirmar(){
+            let idade = Number(document.getElementById('idade').value)
+
+            if (idade < 18){
+                alert('Conteúdo para maiores, acesso restrito.')
+            }
+        }
+    </script>
+</body>
+</html>

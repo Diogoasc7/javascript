@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    Digite sua senha: <input type="password" name="cadastro" id="cadastro" value="">
+    <input type="button" value="Entrar" onclick="login()"> <br>
+
+    <script>
+        function login(){
+            let senha = '2112'
+            let cadastro = document.getElementById('cadastro').value
+
+            if (cadastro == senha){
+                alert('Senha correta')
+            }else {
+                alert('Senha incorreta, tente novamente.')
+            }
+
+        }
+    </script>
+</body>
+</html>
